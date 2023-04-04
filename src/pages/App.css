@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    background-color: #19A7CE;
+    padding: 16px 64px;
+    color: #F6F1F1;
+}
+main .input {
+    float: right;
+}
+main button {
+    border: 0;
+    color: #146C94;
+}
+main button:hover {
+    background-color: #146C94;
+    color: #fff;
+}
+.result-display {
+    padding: 8px 64px;
+    font-size: x-large;
+    text-align: center;
+}

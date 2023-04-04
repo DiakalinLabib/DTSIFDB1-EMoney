@@ -1,4 +1,4 @@
-import moneys from "./moneyData.js";
+import moneys from "../data/moneyData.js";
 
 let convert = (e) => {
     e.preventDefault();
@@ -34,7 +34,7 @@ let convert = (e) => {
 };
 
 let buildMoneyList = (moneys, targetElement) => {
-    document.getElementById(targetElement).innerHTML = "";
+    
 
     moneys.forEach(money => {
         // <option></option>
@@ -63,6 +63,10 @@ let buildMoneyListTo = () => {
     buildMoneyList(moneysFilter, 'to')
 }
 
+let prepareMoneyTo = (from) => {
+    return moneys.filter(money => money.from == from);
+}
+
 let prepareMoneyFrom = () => {
     let moneyFrom = [];
     let newMoneyFrom = [];
@@ -81,5 +85,6 @@ export {
     convert, 
     buildMoneyList, 
     buildMoneyListTo, 
-    prepareMoneyFrom
+    prepareMoneyFrom,
+    prepareMoneyTo
 };

@@ -1,4 +1,4 @@
-import Money from "./money.js";
+import Money from "../models/money.js";
 
 let moneys = [
     new Money('usd', 'idr', 14960.80),
